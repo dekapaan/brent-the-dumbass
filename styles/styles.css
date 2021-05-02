@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  background: url(../images/background-image/trees-6143244_1920.jpg);
+}
+
+.owl-carousel {
+  width: 100vw;
+  padding: 0 30px;
+  /* background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 black(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 black(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  /* justify-content: space-around; */
+}
+
+/* .owl-carousel .owl-item img {
+  width: 400px !important;
+  height: 400px;
+  flex-basis: 400px;
+  object-fit: cover;
+} */
+p {
+  margin-top: 20px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 35px;
+  /* width: 30%; */
+}
+img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -80px;
+  }
+  .owl-carousel .owl-item img {
+    padding: 20px 0;
+    border-radius: 50%;
+    max-width: 100%;
+  }
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+}
